@@ -1,0 +1,23 @@
+/**
+ * @author: wenhao.huang
+ * @date:   2017/12/23
+ */
+
+// 字体
+$fontFamily: "Alright Sans LP", "Avenir Next", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Source Han Sans SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi MicroHei", sans-serif;
+
+// 颜色名称
+$primary: #409EFF;
+$info:    #909399;
+$danger:  #F56C6C;
+$warning: #E6A23C;
+$success: #67C23A;
+$default: #333333;
+$white:   #FFFFFF;
+
+@mixin flex($direction:row,$justify:space-between,$align:center){
+  display:flex;
+  flex-direction:#{$direction};
+  justify-content:#{$justify};
+  align-items:#{$align};
+}

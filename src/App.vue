@@ -1,23 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <header class="header">header</header>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  export default {
+    name: 'app',
+    created() {
+      this.set();
+      window.onresize = () => {
+        this.set();
+      }
+
+    },
+    methods: {
+      set() {
+        const width = document.documentElement.clientWidth;
+        const discount = 750 / 100;
+        const fontSize = width / discount;
+        document.documentElement.style.fontSize = fontSize + 'px';
+      }
+    }
+  }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import "./assets/css/basic";
 </style>
