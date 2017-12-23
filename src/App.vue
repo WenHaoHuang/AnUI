@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <header class="header">header</header>
+    <header-bar></header-bar>
     <router-view/>
   </div>
 </template>
 
 <script>
+  import headerBar from 'components/headerBar';
   export default {
     name: 'app',
+    components:{
+      headerBar
+    },
     created() {
       this.set();
       window.onresize = () => {
