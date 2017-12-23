@@ -4,18 +4,30 @@
 -->
 <template>
     <header class="header flex-row text-center">
-      <div class="header_back"></div>
-      <div class="header_title flex-bd text-md">标题</div>
-      <div class="header_menu"></div>
+        <router-link :to="{name:'layout'}" class="header_back"></router-link>
+        <div class="header_title flex-bd text-md">{{title}}</div>
+        <aside class="header_menu" @click="showMenuFn"></aside>
     </header>
 </template>
 
 <script>
+
     export default {
-        name: 'vue',
+        name: 'headerBar',
         data() {
             return {
                 data: ''
+            }
+        },
+        props: {
+            title: {
+                type: String,
+                default: ''
+            }
+        },
+        methods:{
+            showMenuFn(){
+                this.$emit('onClick',true);
             }
         }
     }
