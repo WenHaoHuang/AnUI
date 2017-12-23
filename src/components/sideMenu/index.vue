@@ -12,7 +12,7 @@
                 <div class="menu-list" v-for="route in $router.options.routes" :key="route.id" v-if="!route.meta.hidden">
                     <div class="item_hd">{{route.name}}</div>
                     <div class="item_bd">
-                        <router-link :to="{name:item.name}" class="item" v-for="item in route.children" :key="item.id">{{item.name}} {{item.meta.title}}</router-link>
+                        <router-link :to="{name:item.name}" class="item" :class="{'current':$route.name == item.name}" v-for="item in route.children" :key="item.id">{{item.name}} {{item.meta.title}}</router-link>
                     </div>
                 </div>
             </section>

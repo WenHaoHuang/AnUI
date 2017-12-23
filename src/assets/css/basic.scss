@@ -17,15 +17,23 @@ html * {
 body {
     color: #333;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.42857143;
     font-family: $fontFamily;
+    background-color:#F0F0F0;
 }
 a{
     text-decoration:none;
     color:inherit;
     outline:none;
 }
-
+h2{
+    font-size:0.5rem;
+    font-weight:400;
+}
+h3{
+    font-size:0.4rem;
+    font-weight:400;
+}
 #app {
     position:fixed;
     left:0;top:0;
@@ -40,6 +48,30 @@ a{
     .flex-bd {
         flex: 1;
     }
+}
+
+/**
+ * @author: wenhao.huang
+ * @date:   2017/12/24
+ * @module:
+ */
+.bg-white{
+    background-color:$white;
+}
+.bg-primary{
+    background-color:$primary;
+}
+.bg-success{
+    background-color:$success;
+}
+.bg-warning{
+    background-color:$warning;
+}
+.bg-danger{
+    background-color:$danger;
+}
+.bg-info{
+    background-color:$info;
 }
 
 // text-align

@@ -3,21 +3,15 @@
 * @date:   2017/12/23
 */
 <template>
-  <article class="page">
-    <!--page-->
-    hello world!
-  </article>
+    <transition name="fade-right">
+        <router-view/>
+    </transition>
 </template>
 
 <script>
-  export default {
-    name: 'vue',
-    data() {
-      return {
-        data: ''
-      }
+    export default {
+        name: 'index'
     }
-  }
 </script>
 
 <style lang="scss">

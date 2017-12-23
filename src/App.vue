@@ -2,9 +2,7 @@
     <div id="app">
         <header-bar :title="title" @onClick="showMenuFn"></header-bar>
         <side-menu :isShow="showMenu" @onClick="showMenuFn"></side-menu>
-        <transition name="fade-right">
-            <router-view/>
-        </transition>
+        <router-view/>
     </div>
 </template>
 
@@ -52,5 +50,5 @@
 </script>
 
 <style lang="scss">
-    @import "./assets/css/style";
+    @import "assets/css/style";
 </style>
