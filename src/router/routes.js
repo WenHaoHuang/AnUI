@@ -34,7 +34,7 @@ const route = [
             },{
                 path: '/basic/container',
                 name: 'container',
-                component: resolve => require(['../views/basic/button.vue'], resolve),
+                component: resolve => require(['../views/basic/container.vue'], resolve),
                 meta: {
                     title: '布局容器'
                 }

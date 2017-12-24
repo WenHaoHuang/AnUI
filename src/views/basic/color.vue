@@ -14,7 +14,7 @@
         <h3>辅助色</h3>
         <div class="section-content">
             <p>除了主色外的场景色，需要在不同的场景中使用。</p>
-            <div class="flex-row">
+            <div class="flex flex-justify-between">
                 <div class="ibox-color bg-success">Success<br>#67C23A</div>
                 <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
                 <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>

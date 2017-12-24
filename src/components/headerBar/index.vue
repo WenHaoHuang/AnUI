@@ -3,7 +3,7 @@
  * @Date   2017/12/23
 -->
 <template>
-    <header class="header flex-row text-center">
+    <header class="header flex flex-align-center text-center">
         <router-link :to="{name:'layout'}" class="header_back"></router-link>
         <div class="header_title flex-bd text-md">{{title}}</div>
         <aside class="header_menu" @click="showMenuFn"></aside>
@@ -34,5 +34,5 @@
 </script>
 
 <style lang="scss">
-
+ @import "index";
 </style>

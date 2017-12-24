@@ -17,7 +17,7 @@
         <h3>禁用状态</h3>
         <div class="section-content">
             <p>按钮不可用状态。</p>
-            <div class="flex-row">
+            <div class="flex flex-justify-between">
                 <div class="ibox-color bg-success">Success<br>#67C23A</div>
                 <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
                 <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>
@@ -27,7 +27,7 @@
         <h3>按钮组</h3>
         <div class="section-content">
             <p>以按钮组的方式出现，常用于多项类似操作。</p>
-            <div class="flex-row">
+            <div class="flex flex-justify-between">
                 <div class="ibox-color bg-success">Success<br>#67C23A</div>
                 <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
                 <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>
@@ -37,7 +37,7 @@
         <h3>不同尺寸</h3>
         <div class="section-content">
             <p>Button 提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。</p>
-            <div class="flex-row">
+            <div class="flex flex-justify-between">
                 <div class="ibox-color bg-success">Success<br>#67C23A</div>
                 <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
                 <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>
