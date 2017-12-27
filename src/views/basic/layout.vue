@@ -35,11 +35,11 @@
         </div>
         <h3>margin 外留白</h3>
         <div class="section-content">
-            <p>四个方向，分别为mt,mr,mb,ml.默认为0，10个档位，基础单位0.01rem。例如：mt20</p>
+            <p>四个方向，分别为mt,mr,mb,ml.默认为0，10-100共10个档位，基础单位0.01rem。例如：mt20</p>
         </div>
         <h3>padding 内留白</h3>
         <div class="section-content">
-            <p>四个方向，分别为pt,pr,pb,pl.默认为0，10个档位，基础单位0.01rem。例如：pt20</p>
+            <p>四个方向，分别为pt,pr,pb,pl.默认为0，10-100共10个档位，基础单位0.01rem。例如：pt20</p>
         </div>
     </article>
 </template>

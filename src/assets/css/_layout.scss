@@ -18,8 +18,8 @@
 
 .flex-column {
     flex-direction: column;
-    .flex-hd,.flex-bd,.flex-ft{
-        width:100%;
+    .flex-hd, .flex-bd, .flex-ft {
+        width: 100%;
     }
 }
 
@@ -54,3 +54,36 @@
 .flex-align-center {
     align-items: center;
 }
+
+// margin padding 留白设置
+$gutterType: margin padding;
+$direction: top right bottom left;
+@each $GT in $gutterType {
+    $type: 'm';
+    @if ($GT == 'padding') {
+        $type: 'p';
+    }
+    @each $dir in $direction {
+        $D: 't';
+        @if ($dir == 'right') {
+            $D: 'r';
+        } @else if ($dir == 'bottom') {
+            $D: 'b';
+        } @else if ($dir == 'left') {
+            $D: 'l';
+        }
+
+        @for $i from 0 to 11 {
+            @if ($i == 0) {
+                .#{$type}#{$D} {
+                    @include gutter($GT, $dir, $i);
+                }
+            } @else {
+                .#{$type}#{$D}#{$i*10} {
+                    @include gutter($GT, $dir, $i);
+                }
+            }
+        }
+    }
+}
+

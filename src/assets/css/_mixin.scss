@@ -17,9 +17,14 @@ $white:   #FFFFFF;
 $light:   #E0E0E0;
 $purple:  #D0D0D0;
 
+// flex
 @mixin flex($direction:row,$justify:space-between,$align:center){
   display:flex;
   flex-direction:#{$direction};
   justify-content:#{$justify};
   align-items:#{$align};
+}
+// gutter 间隔
+@mixin gutter($type:margin,$direction:top,$multiple:0){
+    #{$type}-#{$direction}:0.1rem * $multiple;
 }

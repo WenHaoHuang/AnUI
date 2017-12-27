@@ -12,6 +12,7 @@
         <div class="section-content">
             <!--todo-->
             <p>基础的按钮用法。</p>
+            <i-button>默认按钮</i-button>
             <div class="ibox-color bg-primary">Primary<br>#48FFF2</div>
         </div>
         <h3>禁用状态</h3>
@@ -48,8 +49,15 @@
 </template>
 
 <script>
+    import iButton from 'components/iButton';
     export default {
-        name: 'buttonItem'
+        name: 'buttonItem',
+        components:{
+            iButton
+        },
+        data(){
+            return {}
+        }
     }
 </script>
 
