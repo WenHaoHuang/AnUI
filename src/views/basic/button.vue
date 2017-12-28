@@ -12,27 +12,54 @@
         <div class="section-content">
             <!--todo-->
             <p>基础的按钮用法。</p>
-            <i-button>默认按钮</i-button>
-            <div class="ibox-color bg-primary">Primary<br>#48FFF2</div>
+            <div class="cells-button">
+                <i-button>默认按钮</i-button>
+                <i-button plain>默认按钮</i-button>
+                <i-button round>默认按钮</i-button>
+                <i-button type="primary">主要按钮</i-button>
+                <i-button type="primary" plain>主要按钮</i-button>
+                <i-button type="primary" round>主要按钮</i-button>
+                <i-button type="success">成功按钮</i-button>
+                <i-button type="success" plain>成功按钮</i-button>
+                <i-button type="success" round>成功按钮</i-button>
+                <i-button type="info">信息按钮</i-button>
+                <i-button type="info" plain>信息按钮</i-button>
+                <i-button type="info" round>信息按钮</i-button>
+                <i-button type="warning">警告按钮</i-button>
+                <i-button type="warning" plain>警告按钮</i-button>
+                <i-button type="warning" round>警告按钮</i-button>
+                <i-button type="danger">危险按钮</i-button>
+                <i-button type="danger" plain>危险按钮</i-button>
+                <i-button type="danger" round>危险按钮</i-button>
+            </div>
         </div>
         <h3>禁用状态</h3>
         <div class="section-content">
             <p>按钮不可用状态。</p>
-            <div class="flex flex-justify-between">
-                <div class="ibox-color bg-success">Success<br>#67C23A</div>
-                <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
-                <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>
-                <div class="ibox-color bg-info">Info<br>#909399</div>
+            <div class="cells-button">
+                <i-button disabled>默认按钮</i-button>
+                <i-button type="primary" disabled>主要按钮</i-button>
+                <i-button type="success" disabled>成功按钮</i-button>
+                <i-button type="info" disabled>信息按钮</i-button>
+                <i-button type="warning" disabled>警告按钮</i-button>
+                <i-button type="danger" disabled>危险按钮</i-button>
+                <i-button plain disabled>默认按钮</i-button>
+                <i-button type="primary" plain disabled>主要按钮</i-button>
+                <i-button type="success" plain disabled>成功按钮</i-button>
+                <i-button type="info" plain disabled>信息按钮</i-button>
+                <i-button type="warning" plain disabled>警告按钮</i-button>
+                <i-button type="danger" plain disabled>危险按钮</i-button>
             </div>
         </div>
         <h3>按钮组</h3>
         <div class="section-content">
             <p>以按钮组的方式出现，常用于多项类似操作。</p>
-            <div class="flex flex-justify-between">
-                <div class="ibox-color bg-success">Success<br>#67C23A</div>
-                <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
-                <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>
-                <div class="ibox-color bg-info">Info<br>#909399</div>
+            <div class="cells-button">
+                <div class="button-group">
+                    <i-button type="primary">主要按钮</i-button>
+                    <i-button type="primary">主要按钮</i-button>
+                    <i-button type="primary">主要按钮</i-button>
+                </div>
             </div>
         </div>
         <h3>不同尺寸</h3>

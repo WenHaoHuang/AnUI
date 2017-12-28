@@ -10,6 +10,7 @@
 @import "transition";
 @import "color";
 @import "text";
+@import "button";
 
 
 .page-article {
@@ -41,5 +42,15 @@
             width: 1.6rem;
             color: $white;
         }
+    }
+}
+.cells-button{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    .btn{
+        margin-bottom:0.3rem;
     }
 }

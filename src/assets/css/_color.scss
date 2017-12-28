@@ -3,24 +3,28 @@
  * @date:   2017/12/24
  * @module:
  */
-
 @import 'mixin';
 
-.bg-white{
-    background-color:$white;
+.bg-white {
+    background-color: $white;
 }
-.bg-primary{
-    background-color:$primary;
+
+.bg-primary {
+    background-color: $primary;
 }
-.bg-success{
-    background-color:$success;
+
+.bg-success {
+    background-color: $success;
 }
-.bg-warning{
-    background-color:$warning;
+
+.bg-warning {
+    background-color: $warning;
 }
-.bg-danger{
-    background-color:$danger;
+
+.bg-danger {
+    background-color: $danger;
 }
-.bg-info{
-    background-color:$info;
+
+.bg-info {
+    background-color: $info;
 }
