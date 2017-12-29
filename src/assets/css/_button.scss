@@ -20,7 +20,28 @@ $typeArray:default primary success info warning danger;
         }
     }
 }
-
+.btn{
+    &.btn-lg{
+        display:block;
+        width:100%;
+        font-size:0.32rem;
+        padding:0.32rem 0.4rem;
+    }
+    &.btn-md{
+        font-size:0.26rem;
+        padding:0.2rem 0.32rem;
+    }
+    &.btn-sm{
+        font-size:0.24rem;
+        padding:0.16rem 0.24rem;
+        border-radius:0.06rem;
+    }
+    &.btn-xs{
+        font-size:0.20rem;
+        padding:0.12rem 0.16rem;
+        border-radius:0.06rem;
+    }
+}
 .button-group{
     font-size:0;
     .btn{
@@ -31,12 +52,14 @@ $typeArray:default primary success info warning danger;
         &:last-child{
             border-top-left-radius:0;
             border-bottom-left-radius:0;
+            border-left:0;
         }
         &:not(:first-child){
             &:not(:last-child){
                 border-left-color:rgba($white,0.5);
                 border-right-color:rgba($white,0.5);
                 border-radius:0;
+                margin-left:-0.02rem;
             }
         }
     }

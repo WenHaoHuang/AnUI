@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" :class="[classType,classPlain,classRound,classDisabled]">
+    <button class="btn" :class="[classType,classPlain,classRound,classDisabled,classSize]">
         <slot></slot>
     </button>
 </template>
@@ -41,6 +41,7 @@
             this.classPlain = (this.plain) ? 'is-plain' : '';
             this.classRound = (this.round) ? 'is-round' : '';
             this.classDisabled = (this.disabled) ? 'disabled' : '';
+            this.classSize = (this.size) ? 'btn-' + this.size : '';
         }
     }
 </script>

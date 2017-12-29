@@ -64,12 +64,14 @@
         </div>
         <h3>不同尺寸</h3>
         <div class="section-content">
-            <p>Button 提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。</p>
-            <div class="flex flex-justify-between">
-                <div class="ibox-color bg-success">Success<br>#67C23A</div>
-                <div class="ibox-color bg-warning">Warning<br>#E6A23C</div>
-                <div class="ibox-color bg-danger">Danger<br>#F56C6C</div>
-                <div class="ibox-color bg-info">Info<br>#909399</div>
+            <p>Button 提供除了默认值以外的四种尺寸，可以在不同场景下选择合适的按钮尺寸。</p>
+            <p>分别是lg,md,sm,xs。</p>
+            <div class="cells-button">
+                <i-button size="lg">大型按钮</i-button>
+                <i-button>默认按钮</i-button>
+                <i-button size="md">中等按钮</i-button>
+                <i-button size="sm">小型按钮</i-button>
+                <i-button size="xs">超小按钮</i-button>
             </div>
         </div>
     </article>
