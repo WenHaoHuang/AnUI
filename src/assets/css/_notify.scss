@@ -1,0 +1,53 @@
+/**
+ * @author : wenhao.huang
+ * @date   : 2018/1/10
+ */
+@import 'mixin';
+.notify-wrapper{
+    position:fixed;
+    z-index:10001;
+    content:'';
+    left:0;right:0;
+    top:0;bottom:0;
+    user-select:none;
+    pointer-events:none;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    .notify-mask{
+        position:relative;
+        width:100%;
+        height:100%;
+        background-color:rgba(0,0,0,0.6);
+    }
+    .notify-alert{
+        position:relative;
+        display:inline-block;
+        color:#FFF;
+        padding:0.2rem;
+        border-radius:0.1rem;
+        background-color:rgba(0,0,0,0.7);
+        max-width:6rem;
+        .icon{
+            margin:0.1rem auto;
+            width:0.64rem;height:0.64rem;
+            background-size:auto 100%;
+        }
+        &.skin-default{
+            color:#333;
+            border:0.02rem solid #D0D0D0;
+            background-color:rgba(255,255,255,0.8);
+        }
+        &.skin-info{
+            .icon{
+                background-image:url("assets/img/warning.svg");
+            }
+        }
+        &.skin-success{
+            .icon{
+                background-image:url("assets/img/success.svg");
+            }
+        }
+    }
+}

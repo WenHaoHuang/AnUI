@@ -10,7 +10,6 @@
         </div>
         <h3>基础用法</h3>
         <div class="section-content">
-            <!--todo-->
             <p>基础的按钮用法。</p>
             <div class="cells-button">
                 <i-button>默认按钮</i-button>

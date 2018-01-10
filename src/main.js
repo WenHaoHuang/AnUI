@@ -13,6 +13,10 @@ import fastclick from 'fastclick';
 import VueLazyload from 'vue-lazyload';
 import filter from './filter';
 
+import notify from 'components/notice/index';
+
+Vue.use(notify);
+
 fastclick.attach(document.body);
 
 Vue.config.productionTip = false;

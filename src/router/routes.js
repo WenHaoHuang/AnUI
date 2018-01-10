@@ -56,6 +56,52 @@ const route = [
         ]
     },
     {
+        path: '/notice',
+        name: 'notice',
+        component: resolve => require(['../views/index.vue'], resolve),
+        meta: {
+            title: 'notice'
+        },
+        children:[
+            {
+                path: '/notice/alert',
+                name: 'alert',
+                component: resolve => require(['../views/notice/alert.vue'], resolve),
+                meta: {
+                    title: '警告'
+                }
+            },{
+                path: '/notice/loading',
+                name: 'loading',
+                component: resolve => require(['../views/notice/loading.vue'], resolve),
+                meta: {
+                    title: '加载'
+                }
+            },{
+                path: '/notice/message',
+                name: 'message',
+                component: resolve => require(['../views/notice/alert.vue'], resolve),
+                meta: {
+                    title: '消息提示'
+                }
+            },{
+                path: '/notice/messageBox',
+                name: 'messageBox',
+                component: resolve => require(['../views/notice/alert.vue'], resolve),
+                meta: {
+                    title: '弹框'
+                }
+            },{
+                path: '/notice/notification',
+                name: 'notification',
+                component: resolve => require(['../views/notice/alert.vue'], resolve),
+                meta: {
+                    title: '通知'
+                }
+            }
+        ]
+    },
+    {
         path: '/form',
         name: 'form',
         component: resolve => require(['../views/index.vue'], resolve),
@@ -157,52 +203,6 @@ const route = [
                 component: resolve => require(['../views/basic/button.vue'], resolve),
                 meta: {
                     title: '树形控件'
-                }
-            }
-        ]
-    },
-    {
-        path: '/notice',
-        name: 'notice',
-        component: resolve => require(['../views/index.vue'], resolve),
-        meta: {
-            title: 'notice'
-        },
-        children:[
-            {
-                path: '/notice/alert',
-                name: 'alert',
-                component: resolve => require(['../views/basic/button.vue'], resolve),
-                meta: {
-                    title: '警告'
-                }
-            },{
-                path: '/notice/loading',
-                name: 'loading',
-                component: resolve => require(['../views/basic/button.vue'], resolve),
-                meta: {
-                    title: '加载'
-                }
-            },{
-                path: '/notice/message',
-                name: 'message',
-                component: resolve => require(['../views/basic/button.vue'], resolve),
-                meta: {
-                    title: '消息提示'
-                }
-            },{
-                path: '/notice/messageBox',
-                name: 'messageBox',
-                component: resolve => require(['../views/basic/button.vue'], resolve),
-                meta: {
-                    title: '弹框'
-                }
-            },{
-                path: '/notice/notification',
-                name: 'notification',
-                component: resolve => require(['../views/basic/button.vue'], resolve),
-                meta: {
-                    title: '通知'
                 }
             }
         ]
