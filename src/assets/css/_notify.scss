@@ -9,14 +9,12 @@
     content:'';
     left:0;right:0;
     top:0;bottom:0;
-    user-select:none;
-    pointer-events:none;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     .notify-mask{
-        position:relative;
+        position:absolute;
         width:100%;
         height:100%;
         background-color:rgba(0,0,0,0.6);
@@ -47,6 +45,16 @@
         &.skin-success{
             .icon{
                 background-image:url("assets/img/success.svg");
+            }
+        }
+        &.skin-warning{
+            .icon{
+                background-image:url("assets/img/warning.svg");
+            }
+        }
+        &.skin-error{
+            .icon{
+                background-image:url("assets/img/error.svg");
             }
         }
     }

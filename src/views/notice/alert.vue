@@ -68,12 +68,11 @@
             alertFn3(){
                 this.$alert({
                     type:'success',
-                    text:'温馨提示温馨提示温馨提示'
+                    text:'温馨提示温馨提示温馨提示',
+                    showBg:true,
+                    delay:3000
                 });
             },
-            open5(){
-                this.$alert('温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示温馨提示');
-            }
         }
     }
 </script>
