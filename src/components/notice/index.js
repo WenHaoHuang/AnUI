@@ -26,6 +26,7 @@ const notify = {
                 $vm.show = false;
             },$vm.delay || 1500);
         }
+        console.log('notify');
     }
 };
 export default notify;

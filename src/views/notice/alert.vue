@@ -16,7 +16,9 @@
                 <i-button @click.native="alertFn">默认黑色</i-button>
                 <i-button @click.native="alertFn1">默认白色</i-button>
                 <i-button type="primary" v-on:click.native="alertFn2">primary</i-button>
-                <i-button type="primary" v-on:click.native="alertFn3">success</i-button>
+                <i-button type="success" v-on:click.native="alertFn3">success</i-button>
+                <i-button type="warning" v-on:click.native="alertFn4">warning</i-button>
+                <i-button type="primary" v-on:click.native="alertFn5">warning</i-button>
                 <!--<i-button plain>默认按钮</i-button>
                 <i-button round>默认按钮</i-button>
                 <i-button type="primary">主要按钮</i-button>
@@ -73,6 +75,16 @@
                     delay:3000
                 });
             },
+            alertFn4(){
+                this.$alert({
+                    type:'warning',
+                    text:'温馨提示温馨提示温馨提示',
+                    showBg:true
+                });
+            },
+            alertFn5(){
+                this.hyer('dafsfae')
+            }
         }
     }
 </script>
