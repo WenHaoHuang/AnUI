@@ -1,12 +1,10 @@
 <template>
     <transition name="fade">
-        <div class="notify-wrapper" v-if="show" :class="[className]">
+        <div class="notify-wrapper" v-if="show">
             <div class="notify-mask" v-show="showBg"></div>
-            <div class="notify-alert" :class="[className]">
-                <div class="notify-tbody" v-html="content"></div>
-                <div class="notify-footer">
-                    <div class="ft-close" @click="clickFn">确认</div>
-                </div>
+            <div class="notify-msg" :class="[type != ''?'skin-' + type : '']">
+                <div class="icon" v-if="type != '' && type != 'default'"></div>
+                <div class="tbody">{{text}}</div>
             </div>
         </div>
     </transition>
@@ -23,31 +21,25 @@
                 type:Boolean,
                 default:false
             },
-            content:{
+            text:{
                 type:String,
                 default:''
             },
-            className:{
+            type:{
                 type:String,
                 default:''
             },
             showBg:{
                 type:Boolean,
-                default:true
+                default:false
             },
-            callBack:{
-                type:Function,
-                default:()=>{}
+            delay:{
+                type:Number,
+                default:1500
             },
             transition:{
                 type:Boolean,
                 default:true
-            }
-        },
-        methods:{
-            clickFn(){
-                this.show = false;
-                this.callBack && this.callBack();
             }
         }
     }

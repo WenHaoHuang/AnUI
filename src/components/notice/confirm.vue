@@ -5,6 +5,7 @@
             <div class="notify-alert" :class="[className]">
                 <div class="notify-tbody" v-html="content"></div>
                 <div class="notify-footer">
+                    <div class="ft-cancle" @click="cancleFn">取消</div>
                     <div class="ft-close" @click="clickFn">确认</div>
                 </div>
             </div>
@@ -45,6 +46,9 @@
             }
         },
         methods:{
+            cancleFn(){
+                this.show = false;
+            },
             clickFn(){
                 this.show = false;
                 this.callBack && this.callBack();

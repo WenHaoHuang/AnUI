@@ -64,13 +64,6 @@ const route = [
         },
         children:[
             {
-                path: '/notice/alert',
-                name: 'alert',
-                component: resolve => require(['../views/notice/alert.vue'], resolve),
-                meta: {
-                    title: '警告'
-                }
-            },{
                 path: '/notice/loading',
                 name: 'loading',
                 component: resolve => require(['../views/notice/loading.vue'], resolve),
@@ -80,9 +73,23 @@ const route = [
             },{
                 path: '/notice/message',
                 name: 'message',
-                component: resolve => require(['../views/notice/alert.vue'], resolve),
+                component: resolve => require(['../views/notice/message.vue'], resolve),
                 meta: {
                     title: '消息提示'
+                }
+            },{
+                path: '/notice/alert',
+                name: 'alert',
+                component: resolve => require(['../views/notice/alert.vue'], resolve),
+                meta: {
+                    title: '警告'
+                }
+            },{
+                path: '/notice/confirm',
+                name: 'confirm',
+                component: resolve => require(['../views/notice/confirm.vue'], resolve),
+                meta: {
+                    title: '确认'
                 }
             },{
                 path: '/notice/messageBox',

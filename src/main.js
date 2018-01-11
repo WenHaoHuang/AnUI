@@ -12,12 +12,8 @@ import router from './router';
 import fastclick from 'fastclick';
 import VueLazyload from 'vue-lazyload';
 import filter from './filter';
-
 import notify from 'components/notice/index';
 
-import hyer from 'components/notice/hyer';
-
-Vue.use(hyer);
 Vue.use(notify);
 
 fastclick.attach(document.body);
@@ -40,7 +36,6 @@ Vue.use(VueAwesomeSwiper);
 new Vue({
     el: '#app',
     router,
-    hyer,
     template: '<App/>',
     components: {App}
 })

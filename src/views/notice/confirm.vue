@@ -5,16 +5,16 @@
 
 <template>
     <article class="page page-article page-wrap">
-        <h2>Alert 告警</h2>
+        <h2>Confirm 确认</h2>
         <div class="section-content">
-            <p>告警类notice。用法如下：</p>
+            <p>确认类notice。用法如下：</p>
         </div>
         <h3>Default</h3>
         <div class="section-content">
             <i-button @click.native="alertFn">Default</i-button>
             <p>
                 <code>
-                    this.$alert("这里是消息内容");
+                    this.$confirm("这里是消息内容");
                 </code>
             </p>
         </div>
@@ -23,7 +23,7 @@
             <i-button @click.native="alertFn1">回调</i-button>
             <p>
                 <code>
-                    this.$alert({
+                    this.$confirm({
                         content:'温馨提示温馨提示温馨提示',
                         callBack:()=>{
                             console.log(this.message);
@@ -37,7 +37,7 @@
             <i-button @click.native="alertFn2">样式绑定</i-button>
             <p>
                 <code>
-                    this.$alert({
+                    this.$confirm({
                         content:'温馨提示温馨提示温馨提示',
                         className:'custom'
                     });
@@ -61,10 +61,10 @@
         },
         methods:{
             alertFn(){
-                this.$alert('温馨提示温馨提示温馨提示');
+                this.$confirm('温馨提示温馨提示温馨提示');
             },
             alertFn1(){
-                this.$alert({
+                this.$confirm({
                     content:'温馨提示温馨提示温馨提示',
                     callBack:()=>{
                         console.log(this.message);
@@ -72,7 +72,7 @@
                 });
             },
             alertFn2(){
-                this.$alert({
+                this.$confirm({
                     content:'温馨提示温馨提示温馨提示',
                     className:'custom custom2'
                 });

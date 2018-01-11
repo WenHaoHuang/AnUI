@@ -3,6 +3,7 @@
  * @date   : 2018/1/10
  */
 @import 'mixin';
+
 .notify-wrapper{
     position:fixed;
     z-index:10001;
@@ -19,7 +20,10 @@
         height:100%;
         background-color:rgba(0,0,0,0.6);
     }
-    .notify-alert{
+}
+// message
+.notify-wrapper{
+    .notify-msg{
         position:relative;
         display:inline-block;
         color:#FFF;
@@ -55,6 +59,64 @@
         &.skin-error{
             .icon{
                 background-image:url("assets/img/error.svg");
+            }
+        }
+    }
+}
+// alert
+.notify-wrapper{
+    .notify-alert{
+        position:relative;
+        width:6rem;
+        border-radius:0.1rem;
+        background-color:#FFF;
+        .notify-title{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+            color:#FFF;
+            padding:0.1rem 0.2rem;
+            background-color:$primary;
+            .close{
+                position:relative;
+                width:0.3rem;height:0.3rem;
+                &:before,&:after{
+                    position:absolute;
+                    content:'';
+                    height:100%;
+                    left:0.14rem;
+                    top:0;
+                    border-left:0.02rem solid #FFF;
+                }
+                &:before{
+                    transform:rotate(-45deg);
+                }
+                &:after{
+                    transform:rotate(45deg);
+                }
+            }
+        }
+        .notify-tbody{
+            padding:0.6rem 0.3rem;
+            text-align:center;
+            font-size:0.36rem;
+        }
+        .notify-footer{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            align-items:center;
+            border-top:0.02rem solid #E0E0E0;
+            .ft-cancle,.ft-close{
+                flex:1;
+                text-align:center;
+                padding:0.2rem 0;
+                font-size:0.32rem;
+            }
+            .ft-close{
+                border-left:0.02rem solid #E0E0E0;
+                color:$primary;
             }
         }
     }
