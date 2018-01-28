@@ -13,6 +13,7 @@ import fastclick from 'fastclick';
 import VueLazyload from 'vue-lazyload';
 import filter from './filter';
 import notify from 'components/notice/index';
+import store from './store';
 
 Vue.use(notify);
 
@@ -35,6 +36,7 @@ Vue.use(VueAwesomeSwiper);
 /* eslint-disable no-new */
 new Vue({
     el: '#app',
+    store,
     router,
     template: '<App/>',
     components: {App}

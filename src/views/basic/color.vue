@@ -21,15 +21,25 @@
                 <div class="ibox-color bg-info">Info<br>#909399</div>
             </div>
         </div>
+        <div class="section-content">
+            <p>{{$store.state.count}} - {{count}}</p>
+            <div class="flex flex-justify-between">
+                <div class="ibox-color bg-success" @click="$store.commit('add',10)">add count</div>
+                <div class="ibox-color bg-warning" @click="$store.commit('reduce')">reduce count</div>
+            </div>
+        </div>
     </article>
 </template>
 
 <script>
+    import {mapState} from 'vuex'
+
     export default {
         name: 'color',
         data() {
             return {}
-        }
+        },
+        computed: mapState(['count'])
     }
 </script>
 
