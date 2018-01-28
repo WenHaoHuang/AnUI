@@ -22,24 +22,35 @@
             </div>
         </div>
         <div class="section-content">
-            <p>{{$store.state.count}} - {{count}}</p>
+            <p>{{count}}</p>
             <div class="flex flex-justify-between">
-                <div class="ibox-color bg-success" @click="$store.commit('add',10)">add count</div>
-                <div class="ibox-color bg-warning" @click="$store.commit('reduce')">reduce count</div>
+                <div class="ibox-color bg-success" @click="add(10)">add mutation</div>
+                <div class="ibox-color bg-warning" @click="reduce">reduce mutation</div>
+            </div>
+            <div class="flex flex-justify-between">
+                <div class="ibox-color bg-success" @click="addAction">count action</div>
+                <div class="ibox-color bg-warning" @click="reduceAction">reduce action</div>
             </div>
         </div>
     </article>
 </template>
 
 <script>
-    import {mapState} from 'vuex'
+    import {mapState,mapMutations,mapActions,mapGetters} from 'vuex'
 
     export default {
         name: 'color',
         data() {
             return {}
         },
-        computed: mapState(['count'])
+        computed:{
+            ...mapState(['count']),
+            ...mapGetters(["count"])
+        },
+        methods:{
+            ...mapMutations(['add','reduce']),
+            ...mapActions(['addAction','reduceAction'])
+        }
     }
 </script>
 
